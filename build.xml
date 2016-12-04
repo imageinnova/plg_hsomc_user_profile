@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="HSoMC Member Profile" default="copy_all" basedir=".">
+	<property name="src" value="." />
+	<property name="tgt" value="C:\xampp\htdocs\joomla\plugins\user\hsomcprofile" />
+	<target name="copy_all" description="Copy project files to test">
+		<copy todir="${tgt}">
+			<fileset dir="${src}">
+				<include name="hsomcprofile.php" />
+				<include name="hsomcprofile.xml" />
+				<include name="language/**" />
+				<include name="profiles/**" />
+				<include name="field/**" />
+			</fileset>
+		</copy>
+	</target>
+</project>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fields name="hsomcprofile">
+		<fieldset
+			name="hsomcprofile"
+			label="PLG_USER_HSOMCPROFILE_SLIDER_LABEL"
+		>
+			<field
+				name="address1"
+				type="text"
+				class="form-control"
+				label="PLG_USER_HSOMCPROFILE_FIELD_ADDRESS1_LABEL"
+				description="PLG_USER_HSOMCPROFILE_FIELD_ADDRESS1_DESC"
+				id="address1"
+				filter="string"
+				size="30"
+			/>
+
+			<field
+				name="address2"
+				type="text"
+				class="form-control"
+				label="PLG_USER_HSOMCPROFILE_FIELD_ADDRESS2_LABEL"
+				description="PLG_USER_HSOMCPROFILE_FIELD_ADDRESS2_DESC"
+				id="address2"
+				filter="string"
+				size="30"
+			/>
+
+			<field
+				name="city"
+				type="text"
+				class="form-control"
+				label="PLG_USER_HSOMCPROFILE_FIELD_CITY_LABEL"
+				description="PLG_USER_HSOMCPROFILE_FIELD_CITY_DESC"
+				id="city"
+				filter="string"
+				size="30"
+			/>
+
+			<field
+				name="region"
+				type="text"
+				class="form-control"
+				label="PLG_USER_HSOMCPROFILE_FIELD_REGION_LABEL"
+				description="PLG_USER_HSOMCPROFILE_FIELD_REGION_DESC"
+				id="region"
+				filter="string"
+				size="30"
+			/>
+
+			<field
+				name="country"
+				type="text"
+				class="form-control"
+				label="PLG_USER_HSOMCPROFILE_FIELD_COUNTRY_LABEL"
+				description="PLG_USER_HSOMCPROFILE_FIELD_COUNTRY_DESC"
+				id="country"
+				filter="string"
+				size="30"
+			/>
+
+			<field
+				name="postal_code"
+				type="text"
+				class="form-control"
+				label="PLG_USER_HSOMCPROFILE_FIELD_POSTAL_CODE_LABEL"
+				description="PLG_USER_HSOMCPROFILE_FIELD_POSTAL_CODE_DESC"
+				id="postal_code"
+				filter="string"
+				size="30"
+			/>
+
+			<field
+				name="phone"
+				type="tel"
+				class="form-control"
+				label="PLG_USER_HSOMCPROFILE_FIELD_PHONE_LABEL"
+				description="PLG_USER_HSOMCPROFILE_FIELD_PHONE_DESC"
+				id="phone"
+				filter="string"
+				size="30"
+			/>
+
+			<field
+				name="website"
+				type="url"
+				class="form-control"
+				label="PLG_USER_HSOMCPROFILE_FIELD_WEB_SITE_LABEL"
+				description="PLG_USER_HSOMCPROFILE_FIELD_WEB_SITE_DESC"
+				id="website"
+				filter="url"
+				size="30"
+			/>
+
+			<field
+				name="favoritebook"
+				type="text"
+				class="form-control"
+				label="PLG_USER_HSOMCPROFILE_FIELD_FAVORITE_BOOK_LABEL"
+				description="PLG_USER_HSOMCPROFILE_FIELD_FAVORITE_BOOK_DESC"
+				filter="string"
+				size="30"
+			/>
+
+			<field
+				name="aboutme"
+				type="textarea"
+				class="form-control"
+				label="PLG_USER_HSOMCPROFILE_FIELD_ABOUT_ME_LABEL"
+				description="PLG_USER_HSOMCPROFILE_FIELD_ABOUT_ME_DESC"
+				cols="30"
+				rows="5"
+				filter="safehtml"
+			/>
+
+			<field
+				name="dob"
+				type="dob"
+				class="form-control"
+				label="PLG_USER_HSOMCPROFILE_FIELD_DOB_LABEL"
+				description="PLG_USER_HSOMCPROFILE_FIELD_DOB_DESC"
+				info="PLG_USER_HSOMCPROFILE_SPACER_DOB"
+				format="%Y-%m-%d"
+				filter="server_utc"
+			/>
+
+			<field
+				name="tos"
+				type="tos"
+				class="form-control"
+				label="PLG_USER_HSOMCPROFILE_FIELD_TOS_LABEL"
+				description="PLG_USER_HSOMCPROFILE_FIELD_TOS_DESC_SITES"
+				default="0"
+				>
+			</field>
+		</fieldset>
+	</fields>
+</form>

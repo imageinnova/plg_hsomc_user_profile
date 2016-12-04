@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.6" type="plugin" group="user" method="upgrade">
+	<name>HSoMC Member Profile</name>
+	<author>Image Innovation</author>
+	<creationDate>July 2016</creationDate>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>max@imageinnova.com</authorEmail>
+	<authorUrl>www.imageinnova.com</authorUrl>
+	<version>0.1.0</version>
+	<description>PLG_USER_HSOMCPROFILE_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="hsomcprofile">hsomcprofile.php</filename>
+		<filename>hsomcprofile.xml</filename>
+		<folder>language</folder>
+		<folder>profiles</folder>
+		<folder>field</folder>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_content/models/fields">
+				<field
+					name="register-require-user"
+					type="spacer"
+					label="PLG_USER_HSOMCPROFILE_FIELD_NAME_REGISTER_REQUIRE_USER"
+					class="text"
+				/>
+
+				<field
+					name="register-require_address1"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_ADDRESS1_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_ADDRESS1_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register-require_address2"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_ADDRESS2_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_ADDRESS2_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register-require_city"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_CITY_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_CITY_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register-require_region"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_REGION_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_REGION_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register-require_country"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_COUNTRY_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_COUNTRY_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register-require_postal_code"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_POSTAL_CODE_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_POSTAL_CODE_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register-require_phone"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_PHONE_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_PHONE_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register-require_website"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_WEB_SITE_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_WEB_SITE_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register-require_favoritebook"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_FAVORITE_BOOK_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_FAVORITE_BOOK_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register-require_aboutme"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_ABOUT_ME_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_ABOUT_ME_DESC"
+					>
+					<option	value="2">JOPTION_REQUIRED</option>
+					<option	value="1">JOPTION_OPTIONAL</option>
+					<option	value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register-require_tos"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_TOS_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_TOS_DESC"
+					default="0"
+					>
+					<option	value="2">JOPTION_REQUIRED</option>
+					<option	value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="register_tos_article"
+					type="modal_article"
+					label="PLG_USER_HSOMCPROFILE_FIELD_TOS_ARTICLE_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_TOS_ARTICLE_DESC"
+				/>
+
+				<field
+					name="register-require_dob"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_DOB_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_DOB_DESC"
+					>
+					<option	value="2">JOPTION_REQUIRED</option>
+					<option	value="1">JOPTION_OPTIONAL</option>
+					<option	value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="spacer1"
+					type="spacer"
+					hr="true"
+				/>
+
+				<field
+					name="profile-require-user"
+					type="spacer"
+					label="PLG_USER_HSOMCPROFILE_FIELD_NAME_PROFILE_REQUIRE_USER"
+					class="text"
+				/>
+
+				<field
+					name="profile-require_address1"
+					type="list"
+					description="PLG_USER_HSOMCPROFILE_FIELD_ADDRESS1_DESC"
+					label="PLG_USER_HSOMCPROFILE_FIELD_ADDRESS1_LABEL"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="profile-require_address2"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_ADDRESS2_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_ADDRESS2_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="profile-require_city"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_CITY_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_CITY_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="profile-require_region"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_REGION_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_REGION_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="profile-require_country"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_COUNTRY_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_COUNTRY_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="profile-require_postal_code"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_POSTAL_CODE_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_POSTAL_CODE_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="profile-require_phone"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_PHONE_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_PHONE_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="profile-require_website"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_WEB_SITE_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_WEB_SITE_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+				<field
+					name="profile-require_favoritebook"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_FAVORITE_BOOK_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_FAVORITE_BOOK_DESC"
+					>
+					<option value="2">JOPTION_REQUIRED</option>
+					<option value="1">JOPTION_OPTIONAL</option>
+					<option value="0">JDISABLED</option>
+				</field>
+
+				<field
+					name="profile-require_aboutme"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_ABOUT_ME_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_ABOUT_ME_DESC"
+					>
+					<option	value="2">JOPTION_REQUIRED</option>
+					<option	value="1">JOPTION_OPTIONAL</option>
+					<option	value="0">JDISABLED</option>
+				</field>
+				<field
+					name="profile-require_dob"
+					type="list"
+					label="PLG_USER_HSOMCPROFILE_FIELD_DOB_LABEL"
+					description="PLG_USER_HSOMCPROFILE_FIELD_DOB_DESC"
+					>
+					<option	value="2">JOPTION_REQUIRED</option>
+					<option	value="1">JOPTION_OPTIONAL</option>
+					<option	value="0">JDISABLED</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
